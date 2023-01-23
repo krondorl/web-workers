@@ -1,0 +1,67 @@
+:root {
+  --font-family-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-base: 1.2rem;
+  --font-size-desktop: 1.5rem;
+  --font-size-footer: 1rem;
+  --color-purple: purple;
+  --color-lightgrey: lightgrey;
+  --color-white: white;
+  --color-darkgrey: #444;
+  --color-yellow: yellow;
+}
+
+body {
+    font-family: var(--font-family-stack);
+    font-size: var(--font-size-base);
+    padding: 1rem;
+    text-align: center;
+}
+
+button {
+    font-size: var(--font-size-base);
+    padding: .5rem;
+}
+
+progress {
+    accent-color: var(--color-purple);
+    height: calc(2 * var(--font-size-base));
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.h1 {
+    border-bottom: .3rem dashed var(--color-purple);
+    padding-bottom: 1.5rem;
+}
+
+.worker {
+    background: var(--color-yellow);
+}
+
+.gears-icon {
+    max-height: 1.5rem;
+}
+
+.footer {
+    border-top: .2rem solid var(--color-lightgrey);
+    font-size: var(--font-size-footer);
+    margin-top: 3rem;
+}
+
+.start {
+    background: var(--color-purple);
+    color: var(--color-white);
+}
+
+.terminate {
+    background: var(--color-yellow);
+    color: var(--color-darkgrey);
+}
+
+@media only screen and (min-width: 1280px)  {
+    body {
+        font-size: var(--font-size-desktop);
+    }
+}
